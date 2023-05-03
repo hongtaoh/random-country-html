@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<h1>All Countries & Regions around the World</h1>
+		<div>
+			<label for="search-name">Country / Region: </label>
+			<input id="search-name"/>
+			<label for="search-continent">Continent: </label>
+			<select id="search-continent">
+				<option value="" selected="selected">Choose...</option>
+				<option value="Africa">Africa</option>
+				<option value="Asia">Asia</option>
+				<option value="Europe">Europe</option>
+				<option value="North America">North America</option>
+				<option value="South America">South America</option>
+				<option value="Oceania">Oceania</option>
+			</select>
+			<label for="search-independent">Independent: </label>
+			<select id="search-independent">
+				<option value="" selected="selected">Choose...</option>
+				<option value=true>Yes</option>
+				<option value=false>No</option>
+			</select>
+			<label for="search-carside">Car side: </label>
+			<select id="search-carside">
+				<option value="" selected="selected">Choose...</option>
+				<option value="right">Right</option>
+				<option value="left">Left</option>
+			</select>
+			<button id="search-btn">Search</button>
+			<button id="reset-search-btn">Reset Search</button>
+		</div>
+		<br/>
+		<div class="container-fluid">
+			<div class="row" id="countries"></div>
+		</div>
+	</body>
+</html>
